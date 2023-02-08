@@ -1,0 +1,128 @@
+V "GNAT Lib v7"
+M P W=b
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U p3hjaoh%b		p3hjaoh.adb		f41235d3 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20170106103348 76789da1 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-flteio.ads		20070406091342 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20080324174807 bb51c45a ada.numerics%s
+D a-nudira.ads		20160418104118 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20160418104118 72908cdb ada.numerics.discrete_random%b
+D a-nuelfu.ads		20070406091342 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20151016131424 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20170106103348 31484697 ada.unchecked_conversion%s
+D interfac.ads		20160502101001 5ab55268 interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D p3hjaoh.adb		20210223173128 a9b36ef0 p3hjaoh%b
+D system.ads		20170510173650 4635ec04 system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imguns.ads		20140717070019 9ff43cf7 system.img_uns%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-rannum.ads		20150205111725 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20160418125822 20ba1217 system.random_numbers%b
+D s-ransee.ads		20120130115052 01a57b33 system.random_seed%s
+D s-secsta.ads		20170112134946 9751b57e system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160502101423 34867c83 system.unsigned_types%s
+D s-valuns.ads		20150220142606 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 19|1r6 1r23 2r6 2r29 3r6 3r31 4r6 4r45 6r6 12r30
+X 3 a-flteio.ads
+20K13*Float_Text_IO[14|46] 19|2w10 2r33
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 19|3w10 3r35
+X 6 a-numeri.ads
+16K13*Numerics 32e17 19|4r10 4r49 6r10 12r34
+X 7 a-nudira.ads
+44k22*Discrete_Random 75e33 19|6w19 12r43
+50R9 Generator<26|63R9> 19|45r6[12]
+52V13 Random{integer} 19|76s33[12] 77s33[12] 78s33[12]
+X 8 a-nudira.adb
+53V16 Random[26|83]{integer} 27|392b13[19|12]
+X 9 a-nuelfu.ads
+18K22*Elementary_Functions[10|39] 19|4w19 4r58
+X 10 a-ngelfu.ads
+42V13*Sqrt{float} 19|41s14[9|18]
+X 13 a-textio.ads
+49K13*Text_IO 471e16 19|1w10 1r27
+73I12*Field{integer}
+240U14*Get 19|57s4
+242U14*Put 19|56s4 92s4 93s4 95s4
+X 14 a-tiflio.ads
+68U14*Put 19|94s4[3|20]
+71i7 Aft{13|73I12} 19|94r30[3|20]
+72i7 Exp{13|73I12} 19|94r22[3|20]
+X 17 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 19 p3hjaoh.adb
+8U11*P3hjaoh 8b11 98l5 98t12
+10I12 Mitt_Intervall{integer} 12r59
+12K12 Mitt_Paket[7|44] 13r8
+15R9 Time_Type 19e14 29r13
+16i7 Sec{integer} 65r27 66m27 66r50 80m24 80r48
+17i7 Min{integer} 67m27 67r50 70r27 71m27 71r50
+18i7 Hrs{integer} 72m27 72r50
+21R9 Position_Type 25e14 30r17
+22i7 X{integer} 76m28 85r40 87r56
+23i7 Y{integer} 77m28 85r63 87r79
+24i7 Z{integer} 78m28 85r86 87r102
+28R9 Information_Type 33e14 35r48
+29r7 Time{15R9} 65r22 66m22 66r45 67m22 67r45 70r22 71m22 71r45 72m22 72r45
+. 80m19 80r43
+30r7 Position{21R9} 76m19 77m19 78m19 85r31 85r54 85r77 87r47 87r70 87r93
+31a7 Name{string} 63m19
+35A9 Data_Type(28R9)<integer> 51r14 60r13 83r13
+37V13 Distance{float} 37b13 37>22 37>25 37>28 42l8 42t16 85s10 87s26
+37i22 X{integer} 41r26 41r30
+37i25 Y{integer} 41r34 41r38
+37i28 Z{integer} 41r42 41r46
+45r4 G{7|50R9[12]} 76r40 77r40 78r40
+48f4 Max_Distance{float} 85r91 87m10 94r8
+50a4 Drone_Name{string} 57m8 63r25 92r8
+51a4 Database{35A9} 63m7 65r10 66m10 66r33 67m10 67r33 70r10 71m10 71r33
+. 72m10 72r33 76m7 77m7 78m7 80m7 80r31 85r19 85r42 85r65 87r35 87r58 87r81
+60i8 I{integer} 63r16 65r19 66r19 66r42 67r19 67r42 70r19 71r19 71r42 72r19
+. 72r42 76r16 77r16 78r16 80r16 80r40
+83i8 I{integer} 85r28 85r51 85r74 87r44 87r67 87r90
+X 26 s-rannum.ads
+75V13*Random{17|74M9} 27|221i21
+76V13*Random{17|77M9} 27|221i21
+

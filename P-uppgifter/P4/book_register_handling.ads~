@@ -1,0 +1,34 @@
+--ads
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+
+package Book_Register_Handling is
+   
+
+   type Book_Register_Type is private;
+   type Books_Type is private;
+   
+   procedure Insert(Book_Register: in Books_Type;
+		    Index: in Integer;
+		    Title: in String;
+		    Author: in String;
+		    Pages: in Integer);
+   
+   procedure Input(Book_Register: in Books_Type;
+		   Index: in Integer);
+      
+   procedure Output(Book_Register: in Books_Type);
+   
+private
+   
+   
+   type Book_Register_Type is record
+      Title: String(1..100);
+      Author: String(1..50);
+      Pages: Integer;
+   end record;
+   
+   type Books_Type is 
+     array(1..3) of Book_Register_Type;
+   
+end Book_Register_Handling;

@@ -1,0 +1,48 @@
+--adb
+
+package body Book_Register_Handling is
+   
+   
+   procedure Insert(Book_Register: out Books_Type;
+		    Index: in Integer;
+		    Title: in String;
+		    Author: in String;
+		    Pages: in Integer) is
+      
+   begin
+      Book_Register(Index).Title := Title;
+      Book_Register(Index).Author := Author;
+      Book_Register(Index).Pages := Pages;
+   end Insert;
+   
+   procedure Input(Book_Register: out Books_Type;
+		   Index: in Integer) is   
+   Title: String(1..100);
+   Author: String(1..50);
+   Pages: Integer;
+   
+begin
+   Put("Mata in titel: ");
+   Get(Title);
+   Book_Register(Index).Title:=Title;
+   
+   Put("Författare: ");
+   Get(Author);
+   Book_Register(Index).Author:=Author;
+   
+   Put("Antal sidor: ");
+   Get(Pages);
+   Book_Register(Index).Pages:=Pages;
+   
+          
+end Input;
+
+   procedure Output(Book_Register: in Books_Type) is
+
+   begin 
+      null;
+   end Output;
+      
+
+      
+end Book_Register_Handling;

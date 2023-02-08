@@ -1,0 +1,36 @@
+with Ada.Text_IO;use Ada.Text_IO;
+with Ada.Integer_Text_IO;use Ada.Integer_Text_IO;
+
+with Time_Handling;use Time_Handling;
+
+procedure Test_Set_Book is
+
+   Time_1: Time_Type;
+   Time_2: Time_Type;
+   
+begin
+
+   Put("Mata in ett klockslag: ");
+   Get(Time_1);
+
+   Put("Mata in ett till klockslag: ");
+   Get(Time_2);
+   
+   Put("Differensen mellan ");
+   Put(Time_1);
+   Put(" och ");
+   Put(Time_2);
+   Put(" är ");
+   Put(Time_1 - Time_2);
+
+exception
+   when Hrs_Error=>
+      Put("FEL: Timmen är inte ok.");
+   when Min_Error=>
+      Put("FEL: Minuten är inte ok.");
+   when Sec_Error=>
+      Put("FEl: Sekunden är inte ok.");
+   when others =>
+      Put("FEL: Mata in ett positivt heltal!");
+      
+end Test_Set_Book;

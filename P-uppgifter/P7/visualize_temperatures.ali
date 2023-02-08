@@ -1,0 +1,106 @@
+V "GNAT Lib v7"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U visualize_temperatures%b  visualize_temperatures.adb  dc0d9029 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20170106103348 76789da1 ada%s
+D a-comlin.ads		20140225151544 ea62afbc ada.command_line%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-flteio.ads		20070406091342 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20170106103348 31484697 ada.unchecked_conversion%s
+D interfac.ads		20160502101001 5ab55268 interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20170510173650 4635ec04 system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20170112134946 9751b57e system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160502101423 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D visualize_temperatures.adb  20210712102058 19c30445 visualize_temperatures%b
+X 1 ada.ads
+16K9*Ada 20e8 28|1r6 1r22 2r6 2r30 3r6 3r28 5r6 5r27
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 28|5w10 5r31
+48V13*Argument{string} 28|32s23
+X 4 a-flteio.ads
+20K13*Float_Text_IO[10|46] 28|3w10 3r32
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 28|2w10 2r34
+X 9 a-textio.ads
+49K13*Text_IO 471e16 28|1w10 1r26
+52P9*File_Type 28|22r16
+53n23*In_File{53E9} 28|32r14
+53n32*Out_File{53E9} 28|33r18
+73I12*Field{integer}
+86U14*Create 28|33s4
+92U14*Open 28|32s4
+98U14*Close 28|115s4 116s4
+165U14*New_Line 28|44s4 50s4 98s7
+168U14*Skip_Line 28|91s7
+171V13*End_Of_Line{boolean} 28|64s17
+183V13*End_Of_File{boolean} 28|63s14
+207U14*Put 28|53s7 57s10 104s7
+241U14*Put 28|43s4 46s4 100s7 102s7 110s13
+X 10 a-tiflio.ads
+52U14*Get 28|69s10[4|20]
+X 11 a-tiinio.ads
+51U14*Get 28|67s10[5|18] 68s10[5|18]
+60U14*Put 28|48s7[5|18] 101s7[5|18] 103s7[5|18] 108s13[5|18]
+63i7 Width{9|73I12} 28|48r21[5|18] 101r44[5|18] 103r44[5|18] 108r43[5|18]
+X 28 visualize_temperatures.adb
+7U11*Visualize_Temperatures 7b11 118l5 118t27
+9A9 Temp_Type(integer)<integer> 10r39 37r16 84r19 97r15
+10A9 Data_type(9A9)<integer> 29r10 47r13 56r16 106r21
+12V13 L_Boundary{float} 12b13 12>24 15l8 15t18 85s24 85s65 101s26
+12i24 I{integer} 14r29
+17V13 R_Boundary{float} 17b13 17>24 20l8 20t18 85s39 103s26
+17i24 I{integer} 19r29
+22p4 Txt{9|52P9} 32m9 32r9 63r26 64r29 67r14 68r14 69r14 91r17 115m10 115r10
+22p9 F_Out{9|52P9} 33m11 33r11 43r8 44r13 46r8 48r11 50r13 53r11 57r14 98r16
+. 100r11 101r11 102r11 103r11 104r11 108r17 110r17 116m10 116r10
+24i4 Day{integer} 65r19 67m19 72r22
+24i9 D_Track{integer} 72r29 73m13 73r23 76r22 78m16
+24i18 D_Last{integer} 65m10 72r13
+25i4 Time{integer} 68m19
+26i4 Period{integer} 77m16 77r25 81r20 86r21 86r39 92r17
+28f4 Temp{float} 69m19 85r16 85r57
+29a4 Data{10A9} 36r13 38m10 86m16 86r34 107r13 108r24
+36i8 I{integer} 38r15
+37i11 J{integer} 38r18
+47i8 I{integer} 48r18
+52i8 I{integer}
+55i8 I{integer}
+56i11 J{integer}
+84i14 I{integer} 85r35 85r50 85r76 86r29 86r47
+97i8 Row{integer} 101r37 103r37 107r26 108r37
+106i11 Period{integer} 107r18 108r29
+

@@ -1,0 +1,23 @@
+with Ada.Text_IO; 
+use Ada.Text_IO;
+with Ada.Integer_Text_IO; 
+use Ada.Integer_Text_IO;
+
+package Wardrobe_Handling is
+   
+   Hrs_Error, 
+   Min_Error, 
+   Sec_Error: exception;
+   type Time_Type is private;
+   
+   
+private
+   
+   
+   type Time_Type is record
+      Sec: Natural:=0;
+      Min: Natural:=0; 
+      Hrs: Natural:=0;
+   end record;
+   
+end Wardrobe_Handling;

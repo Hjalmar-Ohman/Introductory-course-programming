@@ -1,0 +1,100 @@
+package body Time_Handling is
+   
+   
+   procedure Get(Item: out Time_Type) is
+      Time: String(1..2);
+      Colon_Eater: Character;
+   begin
+      
+      begin
+      Get(Time);
+      Item.Hrs:= Integer'Value(Time);
+      if Item.Hrs not in 0 .. 23 then
+	 raise Hrs_Error;
+      end if;
+      
+      Get(Colon_Eater)
+      exception
+	 when Data_Error => raise Hrs_Error;
+	 when Constraint_Error => raise Hrs_Error;
+      end;
+      
+      begin
+      Get(Time);
+      Item.Min:= Integer'Value(Time);
+      if Item.Hrs not in 0 .. 60 then
+	 raise Min_Error;
+      end if;
+      Get(Colon_Eater);
+      exception
+	 when Data_Error => raise Min_Error;
+	 when Constraint_Error => raise Min_Error;
+      end;
+      
+      begin
+      Get(Time);
+      Item.Sec:= Integer'Value(Time);
+      if Item.Hrs not in 0 .. 60 then
+	 raise Sec_Error;
+      end if;
+      exception
+	 when Data_Error => raise Sec_Error;
+	 when Constraint_Error => raise Sec_Error;
+      end;
+
+   end Get;
+   
+   procedure Put_Fill(Item: in Integer) is
+      
+   begin 
+      if Item < 10 then
+	 Put('0');
+      end if;
+      Put(Item, Width =>0);
+   end Put_Fill;
+   
+	    
+   
+   procedure Put(Item: in Time_Type) is
+      
+   begin
+      Put_Fill(Item.Hrs, 0);
+      Put(':');
+      Put_Fill(Item.Min, 0);
+      Put(':');
+      Put_Fill(Item.Sec, 0);
+   end Put;
+   
+   --  procedure Difference(Item1,Item2: in Time_Type) is
+   --     Hrs, Min, Sec: Integer;
+   --  begin
+   --     Hrs:= Item1.Hrs - Item2.Hrs;
+   --     Min:= Item1.Min - Item2.Min;   
+   --     Sec:= Item1.Sec - Item2.Sec;
+      
+   --     if Hrs>=0 then
+   --  	 Put(Hrs, Width=>0);
+   --     else
+   --  	 Put(0);
+   --  	 Min:=Min+60*Hrs;
+   --     end if;
+	 
+   --  	 Put(':');
+	 
+   --  	 if Min<=60 then
+   --  	    Put(Min, Width=>0);
+   --  	 else
+   --  	    Sec:= Sec + Min*60;
+   --  	    Min:=Min mod 60;
+   --  	    Put(Min, Width=>0);
+   --  	 end if;
+	 
+   --  	 Put(':');
+
+   --  	 Put(Sec, Width=>0);
+	 
+   --  end Difference;
+
+   
+   
+end Time_Handling;
